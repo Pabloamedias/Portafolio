@@ -6,30 +6,40 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function ProyectoCard() {
+interface Props{
+    image: string;
+    title: string;
+    description: string;
+    url: string
+}
+
+export default function ModelCard({image, title, description, url}: Props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="280"
-        image="/preview_Agendapp.png"
+        image={image}
         alt="Agendapp"
       />
 
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Agendapp
+          {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Una aplicación tipo agenda que almacena los datos ingresados por el
-          usuario de formal local en el navegador.
+          {description}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" href="https://agendapp-zeta.vercel.app/">
+        <Button size="small" 
+        variant="contained"
+        onClick={() => {
+          window.open(url);
+        }}>
           Ir al proyecto
         </Button>
-        <Button size="small">Learn More</Button>
+        
       </CardActions>
     </Card>
   );
