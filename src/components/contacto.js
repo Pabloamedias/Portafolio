@@ -3,10 +3,10 @@ import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import ContactoContenido from "./contactoContenido";
 
-export default function AlertDialog(props) {
+export default function BotonContacto() {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -19,7 +19,7 @@ export default function AlertDialog(props) {
 
   return (
     <div>
-      <Button color="inherit" onClick={handleClickOpen}>
+      <Button color="inherit" variant="outlined" onClick={handleClickOpen}>
         Contacto
       </Button>
       <Dialog
@@ -28,14 +28,11 @@ export default function AlertDialog(props) {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Puedes contactarme en los siguientes cosas"}
+        <DialogTitle className="colorMorado">
+          Puedes contactarme en:
         </DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText>
+          <ContactoContenido />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cerrar</Button>

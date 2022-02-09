@@ -5,13 +5,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import { grey } from "@mui/material/colors";
-import AlertDialog from "./contacto";
+import BotonContacto from "./contacto";
 
-export default function Navbar(props) {
-  const colorWhite = grey[50];
-
+export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" color="secondary">
@@ -28,7 +24,6 @@ export default function Navbar(props) {
           </Typography>
           <Button
             color="inherit"
-            variant="outlined"
             onClick={() => {
               window.open(
                 "https://drive.google.com/file/d/13ArjvhrwcC4QgvsSoK7THNbzejhp6bPM/view?usp=sharing"
@@ -37,7 +32,7 @@ export default function Navbar(props) {
           >
             Curriculo
           </Button>
-          <AlertDialog />
+          <BotonContacto />
         </Toolbar>
       </AppBar>
     </Box>
