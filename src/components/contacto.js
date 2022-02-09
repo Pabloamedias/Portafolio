@@ -5,7 +5,6 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import ContactoContenido from "./contactoContenido";
-
 export default function BotonContacto() {
   const [open, setOpen] = React.useState(false);
 
