@@ -2,6 +2,7 @@ import { Grid, Box, Typography } from "@mui/material";
 import previewAgendapp from "../assets/img/preview_Agendapp.png";
 import previewBarberia from "../assets/img/preview_barberia.png";
 import previewFormulario from "../assets/img/preview_Formulario.png";
+import previewFrutayFruto from "../assets/img/preview_frutayfruto.png";
 import ModelCard from "./modelCard.tsx";
 
 const cardsArray = [
@@ -9,8 +10,8 @@ const cardsArray = [
     image: previewAgendapp,
     title: "Agendapp",
     description:
-      "Una aplicación tipo agenda que almacena tareas de formal local en el navegador",
-    url: "https://agendapp-zeta.vercel.app/",
+      "Una aplicación tipo agenda que almacena tareas de formal local en el navegador.",
+    url: "https://pabloamedias.github.io/Agendapp/",
     alt: "Agendapp",
   },
   {
@@ -18,8 +19,8 @@ const cardsArray = [
 
     title: "Formulario PetShop",
     description:
-      "Un formulario sencillo pero con distintas validaciones hechas con Regex y JS",
-    url: "https://pet-shop-validacion-de-formulario.vercel.app/",
+      "Un formulario sencillo pero con distintas validaciones hechas con Regex y JS.",
+    url: "https://pabloamedias.github.io/PetShop_validacion-de-formulario/",
     alt: "Formulario PetShop",
   },
   {
@@ -27,8 +28,16 @@ const cardsArray = [
     title: "Barbería Alura",
     description:
       "Una pagina sencilla sobre una barbería, se muestra datos como ubicación, servicios, precio, contacto, etc.",
-    url: "https://barberiaalura.vercel.app/",
+    url: "https://pabloamedias.github.io/barberia/",
     alt: "Barbería Alura",
+  },
+  {
+    image: previewFrutayFruto,
+    title: "Fruta & fruto",
+    description:
+      "Una pagina sobre recetas saludables, elaborada con Bootstrap 5.",
+    url: "https://pabloamedias.github.io/Fruta-fruto/",
+    alt: "Fruta&fruto",
   },
 ];
 
