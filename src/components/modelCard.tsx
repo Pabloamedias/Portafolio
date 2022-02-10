@@ -11,16 +11,17 @@ interface Props{
     title: string;
     description: string;
     url: string
+    alt: string
 }
 
-export default function ModelCard({image, title, description, url}: Props) {
+export default function ModelCard({image, title, description, url, alt}: Props) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="280"
-        image={image}
-        alt="Agendapp"
+        image ={image}
+        alt={alt}
       />
 
       <CardContent>

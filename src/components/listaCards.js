@@ -1,27 +1,33 @@
 import { Grid, Box, Typography } from "@mui/material";
-
+import previewAgendapp from "../assets/img/preview_Agendapp.png";
+import previewBarberia from "../assets/img/preview_barberia.png";
+import previewFormulario from "../assets/img/preview_Formulario.png";
 import ModelCard from "./modelCard.tsx";
 
 const cardsArray = [
   {
-    image: "/preview_Agendapp.png",
+    image: previewAgendapp,
     title: "Agendapp",
     description:
       "Una aplicación tipo agenda que almacena tareas de formal local en el navegador",
     url: "https://agendapp-zeta.vercel.app/",
+    alt: "Agendapp",
   },
   {
-    image: "/preview_Formulario_PetShop.png",
+    image: previewFormulario,
+
     title: "Formulario PetShop",
     description: "Un formulario sencillo pero con distintas validaciones",
     url: "https://pet-shop-validacion-de-formulario.vercel.app/",
+    alt: "Formulario PetShop",
   },
   {
-    image: "/preview_barberia.png",
+    image: previewBarberia,
     title: "Barbería Alura",
     description:
       "Una pagina sencilla sobre una barbería, se muestra datos como ubicación, servicios, precio, contacto, etc.",
     url: "https://barberiaalura.vercel.app/",
+    alt: "Barbería Alura",
   },
 ];
 
