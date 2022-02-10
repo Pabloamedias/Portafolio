@@ -17,7 +17,8 @@ const cardsArray = [
     image: previewFormulario,
 
     title: "Formulario PetShop",
-    description: "Un formulario sencillo pero con distintas validaciones",
+    description:
+      "Un formulario sencillo pero con distintas validaciones hechas con Regex y JS",
     url: "https://pet-shop-validacion-de-formulario.vercel.app/",
     alt: "Formulario PetShop",
   },
@@ -40,6 +41,8 @@ export default function ListaCards() {
         component="h4"
         align="center"
         padding={1}
+        color="secondary"
+        fontWeight="bold"
       >
         Mis trabajos
       </Typography>

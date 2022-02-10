@@ -5,6 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import ContactoContenido from "./contactoContenido";
+import { Typography } from "@mui/material";
 export default function BotonContacto() {
   const [open, setOpen] = React.useState(false);
 
@@ -27,10 +28,10 @@ export default function BotonContacto() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle className="colorMorado">
-          Puedes contactarme en:
-        </DialogTitle>
-        <DialogContent>
+        <Typography variant="h6" padding={3} fontWeight="bold">
+          Puedes contactarme en las siguientes plataformas
+        </Typography>
+        <DialogContent dividers>
           <ContactoContenido />
         </DialogContent>
         <DialogActions>

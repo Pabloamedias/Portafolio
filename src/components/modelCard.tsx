@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import SearchIcon from '@mui/icons-material/Search';
 
 interface Props{
     image: string;
@@ -33,8 +34,12 @@ export default function ModelCard({image, title, description, url, alt}: Props) 
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" 
+        <Button size="medium" 
         variant="contained"
+        color="secondary"
+        startIcon={<SearchIcon />}
+        
+        
         onClick={() => {
           window.open(url);
         }}>
