@@ -23,7 +23,7 @@ export default function Navbar() {
             color="inherit"
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/13heOf7qKBkfzTBGiDD_6ycZIG2JSwFTj/view?usp=sharing"
+                "https://drive.google.com/file/d/1v9NIlVZypCoY6LyujHF2dUeDfEvlDiO-/view?usp=sharing"
               );
             }}
           >
